@@ -6,7 +6,7 @@ import csv
 
 FINAL_WEEK = 13
 
-reader = csv.DictReader(open('data/user_auth_info copy.csv', 'rU'))
+reader = csv.DictReader(open('data/user_auth_info.csv', 'rU'))
 fieldnames = ['user_email', 'team_key', 'user_accuracy', 'projection_accuracy', 'survey_results']
 f = open('data/results.csv', 'a')
 #f.truncate()
