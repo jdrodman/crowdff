@@ -12,6 +12,7 @@ The /docs/ directory contains:
 - flow.png: a flow diagram of the CrowdFF’s end-to-end process
 - questionaire.png: a screen shot of the Google survey sent to users
 - yahoo_authorization.png: a screen shot of the Yahoo API authorization page that users are directed to in order to provide access to their roster data
+- yahoo_approval.png: a screen shot of a sample following page within the Yahoo authorization flow.  Users complete the process by sending the code back to us.
 - result.pdf: contains a brief demo of the system and a compilation of the figures produced in analyzing the data
 - logo.png: our designed logo 
 
@@ -25,4 +26,5 @@ The /src/ directory contains the code and scripts used throughout the process:
 	- results.csv: output of the combined aggregation and quality modules
 	- survey_responses: output from the follow-up survey      
 
+NOTE: Due to the public nature of Github repos and the private nature of the data collected, all personal identifications have been redacted.  In addition, the secret access tokens associated with user accounts have been redacted from /data/user_auth_info.csv to prevent public access to users fantasy data.  
     
