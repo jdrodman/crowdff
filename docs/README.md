@@ -21,10 +21,11 @@ The /src/ directory contains the code and scripts used throughout the process:
 - store_creds.py: a script which launches a new user authorization session via Terminal and stores the tokens required for future access in src/data/user_auth_info.csv
 - aggregation.py: a script which iterates through the crowd in src/data/user_auth_info.csv and calls the corresponding methods in pull_data.py to aggregate the user and projected accuracies of each user over the course of the season.  It outputs these accuracies to /src/data/results.csv
 - accuracy.py: code which contains the main quality module. It provides a method for computing the accuracy of a user or projected roster for a given team in a given week.  It is called from within the aggregation module.
+- finalgraph1.html, finalgraph2.html, finalgraph3.html: html code for the Google graphs produced 
 - /data/: this directory contains the data used and produced by the system
 	- user_auth_info.csv: stores the user authorization credentials necessary to pull roster data
 	- results.csv: output of the combined aggregation and quality modules
-	- survey_responses: output from the follow-up survey      
+	- survey_responses.csv: output from the follow-up survey      
 
 NOTE: Due to the public nature of Github repos and the private nature of the data collected, all personal identifications have been redacted.  In addition, the secret access tokens associated with user accounts have been redacted from /data/user_auth_info.csv to prevent public access to users fantasy data.  
     
