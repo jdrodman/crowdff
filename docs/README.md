@@ -9,12 +9,12 @@ Here’s everything you need to know about this repository:
 
 The /docs/ directory contains:
 - README.md: the document you are currently reading
-- flow.png: a flow diagram of the CrowdFF’s end-to-end process
+- Work Flow Diagram.pdf: a flow diagram of the CrowdFF’s end-to-end process
 - questionaire.png: a screen shot of the Google survey sent to users
 - yahoo_authorization.png: a screen shot of the Yahoo API authorization page that users are directed to in order to provide access to their roster data
 - yahoo_approval.png: a screen shot of a sample following page within the Yahoo authorization flow.  Users complete the process by sending the code back to us.
-- result.pdf: contains a brief demo of the system and a compilation of the figures produced in analyzing the data
-- logo.png: our designed logo 
+- CrowdFF Figures and Screenshots.pdf: contains a brief demo of the system and a compilation of the figures produced in analyzing the data
+- CrowdFF_Logo.png: our designed logo 
 
 The /src/ directory contains the code and scripts used throughout the process:
 - pull_data.py: code which provides methods used to manage the entire process of getting authorization from users, pulling data from both Yahoo API and ESPN website, and returning the optimal, best_projected, and chosen lineups for a given user in a given week
