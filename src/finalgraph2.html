@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["bar"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['# Sports Information Services Used', '',
+           { role: 'annotation' } ],
+          ['1', 0.73, ''],
+          ['2', 5.05, ''],
+          ['3', 0.22, ''],
+          ['4', 1.19, ''],
+          ['5+', 0.77, ''],
+        ]);
+
+        var options = {
+          width: 600,
+          height: 400,
+          legend: { position: 'top', maxLines: 6 },
+          bar: { groupWidth: '75%' },
+          isStacked: true,
+          series: {
+            0: { axis: 'numbers' }, 
+            },
+          axes: {
+            
+            y: {
+              numbers: {label: 'Average % Differential'}, // Left y-axis.
+            }
+          },
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="columnchart_material" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

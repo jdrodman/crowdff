@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["bar"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['# Hours/wk Spent Setting Lineup', '',
+           { role: 'annotation' } ],
+          ['1', 0.86, ''],
+          ['2', 1.49, ''],
+          ['3', 3.34, ''],
+          ['4+', -0.85, ''],
+        ]);
+
+        var options = {
+          title: "Hello",
+          width: 600,
+          height: 400,
+          bar: { groupWidth: '75%' },
+          isStacked: true,
+          series: {
+            0: { axis: 'numbers' }, 
+            },
+          axes: {
+            
+            y: {
+              numbers: {label: 'Average % Differential'}, // Left y-axis.
+            }
+          },
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="columnchart_material" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
